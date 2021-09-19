@@ -1,6 +1,6 @@
 # cake-manager
 spring boot microservice demo for Cake Manager API.
-
+This microservice used in-memory H2 database for demo purpose.
 
 
 # Pre-requisites
