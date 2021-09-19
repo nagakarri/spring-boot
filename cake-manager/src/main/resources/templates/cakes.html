@@ -5,17 +5,26 @@
     <title>Cake Manager</title>
 </head>
 <body>
-    <table>
+    <h1>All Cakes</h1>
+    <table border="1">
       <tr>
         <th>Cake Number</th>
         <th>Cake Name</th>
         <th>Cake Info</th>
       </tr>
       <tr th:each="cake:${cakes}">
-        <td th:text="${cake.number}">Number</td>
-        <td th:text="${cake.name}">Name</td>
-        <td th:text="${cake.info}">Info</td>
+        <td th:text="${cake.number}"></td>
+        <td th:text="${cake.name}"></td>
+        <td th:text="${cake.info}"></td>
       </tr>
     </table>
+
+    <h1>Add New Cake</h1>
+    <form method="post" th:action="@{/}" th:object="${cake}" >
+        <p>Cake Number: <input type="text" th:field="*{number}" th:required="required" /></p>
+        <p>Cake Name: <input type="text" th:field="*{name}" th:required="required" /></p>
+        <p>Cake Info: <input type="text" th:field="*{info}" th:required="required" /></p>
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
 </body>
 </html>

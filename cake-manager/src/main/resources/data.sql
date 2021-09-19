@@ -1,0 +1,11 @@
+INSERT INTO CAKE(NAME, CAKE_NUMBER, CAKE_INFO) VALUES('Banana cake with cream cheese','1','Use up over-ripe bananas to create a crowd-pleasing afternoon-tea cake.');
+INSERT INTO CAKE(NAME, CAKE_NUMBER, CAKE_INFO) VALUES('New York baked cheesecake','2','Take the cake and master the basics with this creamy baked version of a classic dessert.');
+INSERT INTO CAKE(NAME, CAKE_NUMBER, CAKE_INFO) VALUES('Chocolate coconut cake','3','A hint of coconut takes this moist chocolate cake to a whole new level.');
+INSERT INTO CAKE(NAME, CAKE_NUMBER, CAKE_INFO) VALUES('Carrot and walnut cake','4','Carrot gold — for a vegetable that’s simply tops, you can’t go past this trusty rabbit-magnet!');
+INSERT INTO CAKE(NAME, CAKE_NUMBER, CAKE_INFO) VALUES('Lemon yoghurt cake with syrup','5','The use of yoghurt in this recipe makes for a fluffier baked cake.');
+INSERT INTO CAKE(NAME, CAKE_NUMBER, CAKE_INFO) VALUES('Chocolate mud cupcakes','6','They say good things come in small packages and cupcakes are the proof. Unleash your creative side with these mini works of art that are as fun to make as they are to eat.');
+INSERT INTO CAKE(NAME, CAKE_NUMBER, CAKE_INFO) VALUES('Flourless orange cake','7','I make this cake for morning teas at work. It’s really easy and because it’s gluten free, everyone can enjoy it.');
+INSERT INTO CAKE(NAME, CAKE_NUMBER, CAKE_INFO) VALUES('Vanilla cupcakes','8','These festive cakes are gluten, dairy, egg and nut free, and are great for kids’ parties or a special treat.');
+INSERT INTO CAKE(NAME, CAKE_NUMBER, CAKE_INFO) VALUES('Basic sponge cake','9','This luscious sponge cake is easy to whip up for any family occasion.');
+INSERT INTO CAKE(NAME, CAKE_NUMBER, CAKE_INFO) VALUES('Chocolate birthday cake','10','Looking for a moist and tasty chocolate birthday cake recipe? Look no further.');
+INSERT INTO CAKE(NAME, CAKE_NUMBER, CAKE_INFO) VALUES('Classic no-bake vanilla cheese','11','Entertain with ease using this classic no-bake vanilla cheesecake. It will be the star of the show.');

@@ -1,17 +1,17 @@
 package com.nkarri.waracle.cakemanager.controllers;
 
+import com.nkarri.waracle.cakemanager.error.CakeNotFoundException;
 import com.nkarri.waracle.cakemanager.models.Cake;
 import com.nkarri.waracle.cakemanager.service.CakeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/cakes")
+@Validated
 public class CakeRestController {
 
     @Autowired
@@ -21,10 +21,20 @@ public class CakeRestController {
         this.cakeService = cakeService;
     }
 
-    @GetMapping
-    public List<Cake> getAllCakes(Model model){
+    @GetMapping("/cakes")
+    public List<Cake> getAllCakes(){
         return cakeService.getAllCakes();
     }
 
+    @PostMapping("/cakes")
+    Cake newCake(@Valid @RequestBody Cake cake) {
+        return cakeService.newCake(cake);
+    }
+
+    @GetMapping("/cakes/{id}")
+    Cake getCake(@PathVariable Long id) {
+        return cakeService.getCake(id)
+                .orElseThrow(() -> new CakeNotFoundException(id));
+    }
 
 }

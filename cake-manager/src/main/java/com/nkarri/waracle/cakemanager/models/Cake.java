@@ -1,9 +1,26 @@
 package com.nkarri.waracle.cakemanager.models;
 
+import javax.persistence.*;
+import javax.validation.constraints.NotEmpty;
+
+@Entity
+@Table(name="CAKE")
 public class Cake {
+    @Id
+    @Column(name="CAKE_ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    @Column(name="CAKE_NUMBER")
+    @NotEmpty(message = "Please provide a Cake Number")
     private String number;
+
+    @Column(name="NAME")
+    @NotEmpty(message = "Please provide a Cake Name")
     private String name;
+
+    @Column(name="CAKE_INFO")
+    @NotEmpty(message = "Please provide Cake Info")
     private String info;
 
     public Cake() {
