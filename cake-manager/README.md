@@ -43,6 +43,7 @@ This application displays all available cakes in a web page for http GET on endp
 This application creates a new cake from the "Add New Cake" on htpp://localhost:8080/
 
 You can use browser to test the above endpoints
+
 #REST API Endpoint "/cakes"
 This application gets all available cakes in json format for http GET on endpoint "/cakes" i.e. htpp://localhost:8080/cakes
 
